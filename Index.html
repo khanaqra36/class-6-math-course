@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 6 Math - Ibrar Ali Narejo</title>
+<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 6 Math - AI Teacher by Ibrar</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
+body{background:#eef2ff;display:flex;justify-content:center}
+.phone{width:100%;max-width:420px;background:#fff;min-height:100vh;padding-bottom:90px;position:relative}
+.header{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:28px 20px 32px;text-align:center;border-radius:0 0 28px 28px}
+.header h2{font-size:20px}
+.header p{font-size:11px;margin-top:8px;opacity:.9}
+.ai-banner{background:linear-gradient(90deg,#f59e0b,#ef4444);color:#fff;margin:14px 16px;border-radius:14px;padding:12px;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+.search{margin:0 16px;background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:10px 14px;display:flex;gap:8px}
+.search input{border:0;outline:0;width:100%}
+.progress{background:#eef2ff;margin:14px 
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}
+body{background:#eef2ff;display:flex;justify-content:center}
+.phone{width:100%;max-width:420px;background:#fff;min-height:100vh;padding-bottom:80px}
+.header{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:32px 20px;text-align:center;border-radius:0 0 28px 28px}
+.header h2{font-size:22px}
+.header p{font-size:11px;margin-top:8px;opacity:.9}
+.progress{background:#eef2ff;margin:16px;border-radius:16px;padding:14px}
+.bar{height:8px;background:#c7d2fe;border-radius:10px;margin:10px 0;overflow:hidden}
+.bar div{height:100%;background:#4f46e5;width:42%}
+.ch{margin:12px 16px;padding:16px;border-radius:18px;display:flex;gap:14px;cursor:pointer;align-items:center;transition:.2s}
+.ch:active{transform:scale(.97)}
+.c1{background:#ff8a2e}.c2{background:#5ec0c9}.c3{background:#a78bfa}.c4{background:#fb9a99}.c5{background:#86efac}.c6{background:#fde68a}
+.nav{position:fixed;bottom:0;max-width:420px;width:100%;background:#fff;display:flex;justify-content:space-around;padding:14px;border-top:1px solid #e5e7eb}
+#modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);justify-content:center;align-items:center;z-index:99;padding:20px}
+.box{background:#fff;padding:22px;border-radius:18px;width:100%;max-width:380px}
+</style>
+</head>
+<body>
+<div class="phone">
+<div class="header">
+<h2>Class 6 Math — Complete Course</h2>
+<p>Created by IBRAR ALI NAREJO<br>Future Software Engineer from Naudero, Sindh</p>
+</div>
+<div class="progress">
+<b>Overall Progress</b><span style="float:right;color:#4f46e5;font-weight:700">42% complete</span>
+<div class="bar"><div></div></div>
+<small>12 Chapters • 24 Lessons • 18 Quizzes • By Ibrar</small>
+</div>
+<div id="list"></div>
+<div class="nav"><span>🏠 Home</span><span>📚 Chapters</span><span>🧠 Quiz</span><span>👤 Profile</span></div>
+</div>
+<div id="modal"><div class="box"><span onclick="modal.style.display='none'" style="float:right;font-size:24px;cursor:pointer">×</span><h3 id="mtitle"></h3><div style="background:#111;color:#fff;padding:30px;border-radius:12px;margin:14px 0;text-align:center">🎥 Lecture Video<br><small>Your YouTube link here</small></div><p id="mdesc" style="color:#555;font-size:14px"></p><button onclick="modal.style.display='none'" style="width:100%;padding:12px;background:#4f46e5;color:#fff;border:0;border-radius:10px;margin-top:12px">Close Lecture</button></div></div>
+<script>
+const data=[
+["Knowing Our Numbers","3 lessons • Completed","Numbers ka basic concept"],
+["Whole Numbers","2 lessons • Completed","Whole numbers explained"],
+["Playing with Numbers","2 lessons • Completed","Factors and multiples"],
+["Basic Geometrical Ideas","3 lessons • In Progress","Points, lines, angles"],
+["Understanding Elementary Shapes","2 lessons • Locked","Shapes sikhenge"],
+["Integers","3 lessons • Locked","Negative numbers"]
+];
+const colors=["c1","c2","c3","c4","c5","c6"];
+const list=document.getElementById("list");
+data.forEach((d,i)=>{
+let div=document.createElement("div");
+div.className="ch "+colors[i];
+div.innerHTML=`<div style="font-size:32px">📘</div><div><b>Chapter ${i+1}<br>${d[0]}</b><br><small>${d[1]}</small></div>`;
+div.onclick=()=>{
+document.getElementById("mtitle").innerText=d[0];
+document.getElementById("mdesc").innerText=d[2]+" - This chapter is created by Ibrar Ali Narejo for Class 6 students.";
+document.getElementById("modal").style.display="flex"
+};
+list.appendChild(div);
+});
+</script>
+</body>
+  </html>

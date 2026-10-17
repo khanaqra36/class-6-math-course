@@ -1,0 +1,24 @@
+/* Class 6 Math - By Ibrar Ali Narejo - Naudero Sindh */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',system-ui}
+:root{
+  --primary:#6366f1;
+  --primary-dark:#4f46e5;
+  --bg:#eef2ff;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+}
+body{
+  background:linear-gradient(180deg,#eef2ff,#f8fafc);
+  display:flex;justify-content:center;min-height:100vh;
+  color:var(--text);
+}
+.phone{
+  width:100%;max-width:430px;background:var(--card);
+  min-height:100vh;padding-bottom:100px;position:relative;
+  box-shadow:0 20px 60px rgba(99,102,241,.15);
+}
+.header{
+  background:linear-gradient(
